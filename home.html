@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+    body {
+        background-image: url("https://lh3.googleusercontent.com/_dSGS2zG5OxkvUrGvw8fhMVW6RitkTykl_WpKaHPpuSX8lG2WXZHzdPNl4GixD4XNijp6kquHqlv5VqnfG3qXbxbGUa1o2v2wOstPa3eTpVYtPM2YPMbg24Z4NzC3aY_NULxxaDe6NfRdPzbtozSYBjpAuDwMA4sUaT4EZdoo-SNSVAqxS1Duh9uW2QCrnnEP_l_Qb8CZg-KCGGWmR99er9eZz1oUjcMrZNGQkeVhHIIK4XUwfb6m-CU7BdWzZEqUlHfI4J0IgFeHEe0L1wu7UQ0F7TJCpm30oZKy86jGsDczbAU0atauf93gI4Lk3PhQHO1_zDTuWQ9DYvBwC2m3iGY6KqakDnC4VgBW33dRoTX8nJmPXPlV7_L21Wd4j3eNY75qU5ZqeoZwf_9O4vDBPKeOT9epk6qfO2An8T4G_s2iQH4x7jUCY7QDP2mYj-hYVGsyK1Z6vKKXj4-LAc-xLfnn9ZXsASpQtwzio__s6cVBns8Dv4tOfRiGDk291E6atPq--g3nXV8RlJyKqMK71ONa9ZKD_QxA_S6uxeapTgkt9YLwoQ2iQ7S4z1X0pkLK5SsV-tFexGJ1DWLrToA64LD5pzjU8hEPElmQjUzwcFqhrMQ2w1AXXJNKz_pKfwRvNg-Ek8hcAzOmV-WUWCSDAzmMEqmgE8n7mrcqKDx5sJPzflsNQS5w6sv2jb7yw=w2168-h2144-no?authuser=0");            cursor: crosshair;
+    }
+
+    .rocketShip {
+        position: fixed;
+        top: 650px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: launch 2.5s linear;
+    }
+
+    @keyframes launch {
+        0% {
+            position: fixed;
+            top: 1850px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        25% {
+            position: fixed;
+            top: 1550px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        50% {
+            position: fixed;
+            top: 1250px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        75% {
+            position: fixed;
+            top: 950px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        100% {
+            position: fixed;
+            top: 650px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .buttonContainer {
+        height: 381px;
+        width: 391px;
+        background-color: #69696969;
+        border-radius: 8px;
+        position: fixed;
+        left: 40%;
+        top: 50%;
+        transform: translate(-7.7%, -80.5%);
+    }
+
+    .title {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-57%, -200%);
+        background-color: #708090;
+        border-radius: 15px;
+        padding: 8px;
+        width: 350px;
+        height: 75px;
+    }
+
+    .button {
+        color: #000000;
+        border: 4px solid #708090;
+        border-radius: 8px;
+        cursor: crosshair;
+        width: 300px;
+        height: 40px;
+        font-family: 'Arial', Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button:hover {
+        box-shadow: 1px 1px #708090, 2px 2px #708090, 3px 3px #708090, 4px 4px #708090, 5px 5px #708090;
+    }
+
+    .accordion {
+        color: #000000;
+        border: 4px solid #708090;
+        border-radius: 8px;
+        cursor: crosshair;
+        padding: 0 50px;
+        height: 40px;
+        font-family: 'Arial', Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-61%, 340%);
+    }
+
+    .active, .accordion:hover {
+        box-shadow: 1px 1px #708090, 2px 2px #708090, 3px 3px #708090, 4px 4px #708090, 5px 5px #708090;
+    }
+
+    .panel {
+        padding: 0 20px;
+        background-color: #708090;
+        max-height: 0;
+        overflow: hidden;
+        cursor: crosshair;
+        transition: max-height 0.2s ease-out;
+        font-family: 'Arial', Helvetica, sans-serif;
+        font-size: 18px;
+        width: 175px;
+        position: fixed;
+        top: 56%;
+        left: 43.4%;
+    }
+
+    .shopButton {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-59%, -180%);
+    }
+
+    .musicButton {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-59%, -50%);
+    }
+
+    .thoughtsButton {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-59%, 210%);
+    }
+
+    .photosButton {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-59%, 80%);
+        
+    }
+
+    
+</style>
+</head>
+
+<body>
+
+    <div class="rocketShip">
+        <img src="https://lh3.googleusercontent.com/DuTOXlgBTQ7MzwKMGldgSoU9AYAyrT2ARzSF-ASEe6EOOjski64M4o2HLFk_u_AZ1zMM4BKKEeR8TBOTAd96yMW2UPXGvSlVyeHbX4I7ea0KSU_4XQDLoO7eZnxQStGyDmWny3r8UCN8FbOFoYQszGHnOD3gA5X2b75-QKWvXCuBPm2PYFW7CKpgw1dnpx70b3OfxRjP_6sClhZW1w7o9HMQBJ840hCxK-zSm5z0cqgC-TKkVx5J4OB3lIKql1pXVAyPOAfz1KCw3Xugwid941X4g7RKiimHI_proO1DhVtLX3mrWL3Kaz55IEY7ocB0ORlHfUsawBhAdK69MDI_g1ai_dL4InCrKjGxb7cPvFWQ3TThyUlh-kUCp6BOAfogcTIEn6AfmwKb_wL_8hLWOaFSIsEJpHTBdFf6WjTRUG-rdnoyoNY4aaTd9-qqmVg7OZOB6-jB0rCWGXsyaP7Od2npHAbMbgxfKi25DdKgrXYMIbYdoAWgAZfUG0OzJCRwv2_n8W-we4hQOHBxSaV24ZfYDVwlSNgBDVc0swDV8K2yEa-JMlwf8bDMRopat-ExgyKbvFgDZm4xckkX1TbAMf2YAHcvb00uRIAt1rNvjqoULUVsMflegWQX55KWZo8AX5XBq5fGe3Ri0iE2YAkrHpPr_FEuOQOyuyX-D0j_CDSTC01BPOv6BW-CQvm6Mg=w1041-h1386-no?authuser=0">
+    </div>
+
+    
+
+    <div class="buttonContainer"></div>
+
+    <div class="title">
+        <img src="https://lh3.googleusercontent.com/0XSc2g8WZHeKb8AE1K-RStQlx6_grKHs2Unx89qitnxEAiMsGXGTTfaraK8L_V0N5e7PlMXYbeOhMNQaM3ml2n5ThBAXMagKFWQAbvoWnNmhBZGYQRa1_Rn4HwPSG6wWwPAmeC61qh6VTciOZ8hDjbIdHizHSHdmnACE39mRiLInB3awyYR0wJSr_P2vqtcvcyObv2O-fi6Dt3uioTa_2xtlQo4EonHnKlFbAcH7Ty7wefgwiBrCzqvwtlpx9fnmYVzsteFBAu-8lItgDwAY4nE9LRTbQwYmpIFZmlykC4O2KgUkkiK5Q5UqQswCfl6ACjxNDfzB0uMv2OeiVF9PIEiCQvR7yNmrNYUF6uHBgsW2QIU4xY8kYvwdOBOOYcXqeq5JWjDpZ35ww7ksJ-e80yZLVAnVdZKN92pK8QyR70RZ8FJMX7Jh3m9wewOrCH97pOBEPj5cDy1gJVommrqn_TVWTvInCfZZu7v8MsRdVettZvmSspR64ZHjbn7ZgzelWZ6M6ZtQ3ET-_TLL4ixLD2SJCGqZ4asICP9SuR9hYbrnrNjeHVUmPZtE3LWAHcE_3yXWlnfG5FmuA82WBX4wSdp-CEr1Kg--rbA8-zrohng2SratmxRY2xAENf17GcZ5-F9N3tSyiB1YPN54eeVj7Disq0a76gCWBkvpPv7UJU6wlgPjVRXsV6xmHbf-ag=w764-h154-no?authuser=0"
+             width="350" height="75">
+    </div>
+
+    <div class="shopButton">
+        <input type="button" class="button" value="Shop" />
+    </div>
+
+    <div class="musicButton">
+        <input type="button" class="button" value="Music" />
+    </div>
+
+    <div class="thoughtsButton">
+        <input type="button" class="button" value="Thoughts" />
+    </div>
+
+    <div class="photosButton">
+       <input type="button" class="button" value="Photos" />
+    </div>
+
+    <button class="accordion">Contact Me</button>
+        <div class="panel">
+            <p>INSTAGRAM: jacobcampbell.ca</p>
+            <p>TWITTER: jacobcampbellca</p>
+            <p>SNAPCHAT: jakecampbell.ca</p>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
