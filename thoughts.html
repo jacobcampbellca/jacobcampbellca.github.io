@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>shop</title>
+
+    <style>
+
+    body { background-image: url("https://lh3.googleusercontent.com/hIqofxswxwZ8DN4-GWMKt8bisSVRi73cyvZdJfpjH4hC-BJFKDATOLqfHz1npw3tbSXayogE7maC6cSl9tbu5y_aMTlV-BBNa-jHcFUmvY9nESPMdxd4uMAJhIXxnvZTbblqb7eiHKnD6h9sPOymoMxvW0K6EiqqO0bW11nF_KO8BlMJhp7LKC5GrsnhEZSFUGzlJmlLwkRgW8oBU0xOhSUJ4L3LGFJq4AEUmATw3_JoKIfswd03alweIs40nOX_Ean7Dzwwj4VoCglp9DJxh1pDKPlZ-qbe_cnEKV4ICimif17W6DoOCESCiPRmL6ByjYXx9d8I3LLrRq4lFhvU_QJUqxY_jE-Tmhec4Y6-Kc1_wUcAe1dWA6cyOA9Z0JR4jteRXZyduJkXjtSHNoB6IowCombO9M7BoCckQ6N-KpRMSXzVfH9574uragWi7lo80MhKMgKFOe6abkjCgoB6uuIbLIEm1XBKkWjGU9sXp-hEekGURaIXmUcPOCsL79qkyy0r3Y287SsSMizGO4iRiVniscwHb0FozJpFEcZj18IYryKkN-k90x43G1isjPmdKKug5wZqOCk5ycKsrZhelpWu0yRwvqAUQD9RGIczCwPipHX3OawKYAUCyNW3IRPd0OXM-FHKkS-a1T6eIPX8fYf13sB0QeXBtU_cV8HjWKEp1PDkO0o-vWuYZGS-Qw=w1326-h1754-no?authuser=0");
+           background-size: 75px 100px;
+           background-repeat: repeat;
+           cursor: crosshair; }
+
+        .navBarTop {
+            position: fixed;
+            height: 45px;
+            width: 101%;
+            background-color: #202A44;
+            transform: translate(-10px, -10px);
+            z-index: -1;
+            cursor: crosshair;
+        }
+
+        .navBarBottom {
+            position: fixed;
+            height: 45px;
+            width: 101%;
+            background-color: #7E191B;
+            transform: translate(-10px, 35px);
+            position: relative;
+            z-index: -1;
+            cursor: crosshair;
+        }
+
+        .title {
+            position: fixed;
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            padding: 7px;
+            width: 200px;
+            height: 35px;
+            cursor: crosshair;
+        }
+
+
+
+        .titleBorder {
+            position: fixed;
+            height: 50px;
+            width: 215px;
+            background-color: #000000;
+            transform: translate(10px, -40px);
+            padding: 4px;
+            border-radius: 35px;
+            z-index: 1;
+            cursor: crosshair;
+        }
+
+        .button {
+            color: #000000;
+            border: 4px solid #000000;
+            border-radius: 25px;
+            cursor: crosshair;
+            width: 120px;
+            height: 40px;
+            font-family: 'Arial', Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            cursor: crosshair;
+        }
+
+            .button:hover {
+                box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000;
+            }
+
+        .shopButton {
+            position: fixed;
+            transform: translate(250px, -29px);
+        }
+
+        .musicButton {
+            position: fixed;
+            transform: translate(380px, -29px);
+        }
+
+        .mediaButton {
+            position: fixed;
+            transform: translate(510px, -29px);
+        }
+
+        .cart {
+            position: fixed;
+            border: 5px solid #000000;
+            border-radius: 50px;
+            transition: all 0.2s ease-in-out;
+            cursor: crosshair;
+            transform: translate(1800px, -45px);
+        }
+
+            .cart:hover {
+                box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000;
+            }
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+    <div class="navBarTop"></div>
+    <div class="navBarBottom"></div>
+    <div class="titleBorder">
+        <div class="title" onclick="location.href ='home.html'">
+            <img src="https://lh3.googleusercontent.com/0XSc2g8WZHeKb8AE1K-RStQlx6_grKHs2Unx89qitnxEAiMsGXGTTfaraK8L_V0N5e7PlMXYbeOhMNQaM3ml2n5ThBAXMagKFWQAbvoWnNmhBZGYQRa1_Rn4HwPSG6wWwPAmeC61qh6VTciOZ8hDjbIdHizHSHdmnACE39mRiLInB3awyYR0wJSr_P2vqtcvcyObv2O-fi6Dt3uioTa_2xtlQo4EonHnKlFbAcH7Ty7wefgwiBrCzqvwtlpx9fnmYVzsteFBAu-8lItgDwAY4nE9LRTbQwYmpIFZmlykC4O2KgUkkiK5Q5UqQswCfl6ACjxNDfzB0uMv2OeiVF9PIEiCQvR7yNmrNYUF6uHBgsW2QIU4xY8kYvwdOBOOYcXqeq5JWjDpZ35ww7ksJ-e80yZLVAnVdZKN92pK8QyR70RZ8FJMX7Jh3m9wewOrCH97pOBEPj5cDy1gJVommrqn_TVWTvInCfZZu7v8MsRdVettZvmSspR64ZHjbn7ZgzelWZ6M6ZtQ3ET-_TLL4ixLD2SJCGqZ4asICP9SuR9hYbrnrNjeHVUmPZtE3LWAHcE_3yXWlnfG5FmuA82WBX4wSdp-CEr1Kg--rbA8-zrohng2SratmxRY2xAENf17GcZ5-F9N3tSyiB1YPN54eeVj7Disq0a76gCWBkvpPv7UJU6wlgPjVRXsV6xmHbf-ag=w764-h154-no?authuser=0"
+                 width="200" height="35">
+        </div>
+    </div>
+
+    <div class="shopButton">
+        <input type="button" class="button" value="shop" onclick="location.href ='shop.html'" />
+    </div>
+
+    <div class="musicButton">
+        <input type="button" class="button" value="music" onclick="location.href ='music.html'" />
+    </div>
+
+    <div class="mediaButton">
+        <input type="button" class="button" value="media" onclick="location.href ='media.html'"/>
+    </div>
+
+    <img class="cart" src="https://lh3.googleusercontent.com/5HWzpf6qhOMp0Xyw9tzJl2ZCwYIWwtnTGgsfU8TbO4D2PzhveCrSIYArP7OofcIb1PLwTKU1cPgmAPatrPU_L0EvkRNeyUExcQE--Td629Q_5yFvSf1-f0skJKDK3bMNelAwsT84ywENuTMkztb2rSIV0PEnMpH3gyJvqEoSKiJEbOw3bq0UASnvuv5hqrXzibyPMVlSr3azemz0-iZ7NpK8zG4QArCx6oCLnFdp_1soDxo6dzs1kYcnhxgAUeGF3iZvTL1-FKlQo3ydbHxWvT1K-V9UmKF0Rfu7e6-LV2sr2Rge21mhlYivf9mf2RIrkgIIqjNKaHqd7AIL5vSEBi5RcoDWtps2DLPD2fWO4rpN6Jnp0gYwqiEpehxiREoTP-p6_GQ--mYXb3Ol6eab2EAn17Lv8Yu2I5kfbQ-le5apkwd9LFlojWvi2jSegJ8IDqEglabgzHUZHICEUfKipVl9t6Co3BCC1VLYJbgFfhJsCWXmvyb0nmuVWLVfG1pNSAa3dhDCkH0Zjb7-prGCFoa6uO-4hgzwfSvXY6jNPLpQqCJla-2vOKldJgWb5O97KrUDnzQZ0DtcO1DovX7LrnZbq_lA1230KzcHuwFs8YCwnmlIzZTJHOSt0jovDFaMZBCz23dyIbHYO-zFN2ePJ2zNbcdLSwwwoe23igXMsYDLvS159LdQ6mycbrwkGg=s1000-no?authuser=0"
+         width="60" height="60" />
+
+
+
+</body>
+</html>
