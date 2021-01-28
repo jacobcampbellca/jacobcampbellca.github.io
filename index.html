@@ -3,6 +3,7 @@
     <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>home</title>
 <style>
 
 
@@ -63,9 +64,9 @@
         background-color: #FFA500;
         border-radius: 30px;
         position: fixed;
-        left: 40%;
-        top: 50%;
-        transform: translate(-7.7%, -77%);
+        top: 40%;
+        left: 50%;
+        transform: translate(-57%, -50%);
         opacity: 0.75;
         cursor: crosshair;
     }
@@ -117,22 +118,25 @@
         left: 50%;
         transform: translate(-61%, 340%);
         cursor: crosshair;
+        z-index: 1;
     }
 
     .panel {
-        padding: 0 20px;
         background-color: #B3210D;
         max-height: 0;
         overflow: hidden;
         cursor: crosshair;
         transition: max-height 0.2s ease-out;
-        font-family: 'Arial', Helvetica, sans-serif;
+        font-family: border: 4px solid #B3210D;
         font-size: 18px;
-        width: 175px;
+        width: 214px;
         position: fixed;
-        top: 56%;
-        left: 43.4%;
+        top: 55%;
+        left: 43.25%;
         cursor: crosshair;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        z-index: auto, -1;
     }
 
     .shopButton {
@@ -168,61 +172,63 @@
 </style>
 </head>
 
-<body>
+    <body>
 
-    <div class="rocketShip">
-        <img src="https://lh3.googleusercontent.com/DuTOXlgBTQ7MzwKMGldgSoU9AYAyrT2ARzSF-ASEe6EOOjski64M4o2HLFk_u_AZ1zMM4BKKEeR8TBOTAd96yMW2UPXGvSlVyeHbX4I7ea0KSU_4XQDLoO7eZnxQStGyDmWny3r8UCN8FbOFoYQszGHnOD3gA5X2b75-QKWvXCuBPm2PYFW7CKpgw1dnpx70b3OfxRjP_6sClhZW1w7o9HMQBJ840hCxK-zSm5z0cqgC-TKkVx5J4OB3lIKql1pXVAyPOAfz1KCw3Xugwid941X4g7RKiimHI_proO1DhVtLX3mrWL3Kaz55IEY7ocB0ORlHfUsawBhAdK69MDI_g1ai_dL4InCrKjGxb7cPvFWQ3TThyUlh-kUCp6BOAfogcTIEn6AfmwKb_wL_8hLWOaFSIsEJpHTBdFf6WjTRUG-rdnoyoNY4aaTd9-qqmVg7OZOB6-jB0rCWGXsyaP7Od2npHAbMbgxfKi25DdKgrXYMIbYdoAWgAZfUG0OzJCRwv2_n8W-we4hQOHBxSaV24ZfYDVwlSNgBDVc0swDV8K2yEa-JMlwf8bDMRopat-ExgyKbvFgDZm4xckkX1TbAMf2YAHcvb00uRIAt1rNvjqoULUVsMflegWQX55KWZo8AX5XBq5fGe3Ri0iE2YAkrHpPr_FEuOQOyuyX-D0j_CDSTC01BPOv6BW-CQvm6Mg=w1041-h1386-no?authuser=0">
-    </div>
+        <div class="rocketShip">
+            <img src="https://lh3.googleusercontent.com/DuTOXlgBTQ7MzwKMGldgSoU9AYAyrT2ARzSF-ASEe6EOOjski64M4o2HLFk_u_AZ1zMM4BKKEeR8TBOTAd96yMW2UPXGvSlVyeHbX4I7ea0KSU_4XQDLoO7eZnxQStGyDmWny3r8UCN8FbOFoYQszGHnOD3gA5X2b75-QKWvXCuBPm2PYFW7CKpgw1dnpx70b3OfxRjP_6sClhZW1w7o9HMQBJ840hCxK-zSm5z0cqgC-TKkVx5J4OB3lIKql1pXVAyPOAfz1KCw3Xugwid941X4g7RKiimHI_proO1DhVtLX3mrWL3Kaz55IEY7ocB0ORlHfUsawBhAdK69MDI_g1ai_dL4InCrKjGxb7cPvFWQ3TThyUlh-kUCp6BOAfogcTIEn6AfmwKb_wL_8hLWOaFSIsEJpHTBdFf6WjTRUG-rdnoyoNY4aaTd9-qqmVg7OZOB6-jB0rCWGXsyaP7Od2npHAbMbgxfKi25DdKgrXYMIbYdoAWgAZfUG0OzJCRwv2_n8W-we4hQOHBxSaV24ZfYDVwlSNgBDVc0swDV8K2yEa-JMlwf8bDMRopat-ExgyKbvFgDZm4xckkX1TbAMf2YAHcvb00uRIAt1rNvjqoULUVsMflegWQX55KWZo8AX5XBq5fGe3Ri0iE2YAkrHpPr_FEuOQOyuyX-D0j_CDSTC01BPOv6BW-CQvm6Mg=w1041-h1386-no?authuser=0">
+        </div>
 
-    
 
-    <div class="buttonContainer"></div>
 
-    <img class="title" src="https://lh3.googleusercontent.com/0XSc2g8WZHeKb8AE1K-RStQlx6_grKHs2Unx89qitnxEAiMsGXGTTfaraK8L_V0N5e7PlMXYbeOhMNQaM3ml2n5ThBAXMagKFWQAbvoWnNmhBZGYQRa1_Rn4HwPSG6wWwPAmeC61qh6VTciOZ8hDjbIdHizHSHdmnACE39mRiLInB3awyYR0wJSr_P2vqtcvcyObv2O-fi6Dt3uioTa_2xtlQo4EonHnKlFbAcH7Ty7wefgwiBrCzqvwtlpx9fnmYVzsteFBAu-8lItgDwAY4nE9LRTbQwYmpIFZmlykC4O2KgUkkiK5Q5UqQswCfl6ACjxNDfzB0uMv2OeiVF9PIEiCQvR7yNmrNYUF6uHBgsW2QIU4xY8kYvwdOBOOYcXqeq5JWjDpZ35ww7ksJ-e80yZLVAnVdZKN92pK8QyR70RZ8FJMX7Jh3m9wewOrCH97pOBEPj5cDy1gJVommrqn_TVWTvInCfZZu7v8MsRdVettZvmSspR64ZHjbn7ZgzelWZ6M6ZtQ3ET-_TLL4ixLD2SJCGqZ4asICP9SuR9hYbrnrNjeHVUmPZtE3LWAHcE_3yXWlnfG5FmuA82WBX4wSdp-CEr1Kg--rbA8-zrohng2SratmxRY2xAENf17GcZ5-F9N3tSyiB1YPN54eeVj7Disq0a76gCWBkvpPv7UJU6wlgPjVRXsV6xmHbf-ag=w764-h154-no?authuser=0"
-         width="350" height="75">
-    
+        <div class="buttonContainer"></div>
 
-    <div class="shopButton">
-        <input type="button" class="button" value="shop" onclick="location.href ='shop.html'"/>
-    </div>
+        <img class="title" src="https://lh3.googleusercontent.com/0XSc2g8WZHeKb8AE1K-RStQlx6_grKHs2Unx89qitnxEAiMsGXGTTfaraK8L_V0N5e7PlMXYbeOhMNQaM3ml2n5ThBAXMagKFWQAbvoWnNmhBZGYQRa1_Rn4HwPSG6wWwPAmeC61qh6VTciOZ8hDjbIdHizHSHdmnACE39mRiLInB3awyYR0wJSr_P2vqtcvcyObv2O-fi6Dt3uioTa_2xtlQo4EonHnKlFbAcH7Ty7wefgwiBrCzqvwtlpx9fnmYVzsteFBAu-8lItgDwAY4nE9LRTbQwYmpIFZmlykC4O2KgUkkiK5Q5UqQswCfl6ACjxNDfzB0uMv2OeiVF9PIEiCQvR7yNmrNYUF6uHBgsW2QIU4xY8kYvwdOBOOYcXqeq5JWjDpZ35ww7ksJ-e80yZLVAnVdZKN92pK8QyR70RZ8FJMX7Jh3m9wewOrCH97pOBEPj5cDy1gJVommrqn_TVWTvInCfZZu7v8MsRdVettZvmSspR64ZHjbn7ZgzelWZ6M6ZtQ3ET-_TLL4ixLD2SJCGqZ4asICP9SuR9hYbrnrNjeHVUmPZtE3LWAHcE_3yXWlnfG5FmuA82WBX4wSdp-CEr1Kg--rbA8-zrohng2SratmxRY2xAENf17GcZ5-F9N3tSyiB1YPN54eeVj7Disq0a76gCWBkvpPv7UJU6wlgPjVRXsV6xmHbf-ag=w764-h154-no?authuser=0"
+             width="350" height="75">
 
-    <div class="musicButton">
-        <input type="button" class="button" value="music" onclick="location.href ='music.html'"/>
-    </div>
 
-    
+        <div class="shopButton">
+            <input type="button" class="button" value="shop" onclick="location.href='shop.html'" />
+        </div>
 
-    <div class="mediaButton">
-       <input type="button" class="button" value="media" onclick="location.href ='media.html'" />
-    </div>
+        <div class="musicButton">
+            <input type="button" class="button" value="music" onclick="location.href ='music.html'" />
+        </div>
 
-    <div class="thoughtsButton">
-        <input type="button" class="button" value="thoughts" onclick="location.href ='thoughts.html'"/>
-    </div>
 
-    <button class="accordion">contact me</button>
+
+        <div class="mediaButton">
+            <input type="button" class="button" value="media" onclick="location.href ='media.html'" />
+        </div>
+
+        <div class="thoughtsButton">
+            <input type="button" class="button" value="thoughts" onclick="location.href ='thoughts.html'" />
+        </div>
+
+        <button class="accordion" onclick="changeHeight();">contact me</button>
         <div class="panel">
-            <p>INSTAGRAM: jacobcampbell.ca</p>
-            <p>TWITTER: jacobcampbellca</p>
-            <p>SNAPCHAT: jakecampbell.ca</p>
-         </div>
+            <center><p style="font-family:'Courier New', monospace;">(236)562-6500</p></center>
+        </div>
 
 
-    <script>
-        var accordian = document.getElementsByClassName("accordion");
-        for (var i = 0; i < accordian.length; i++) {
-            accordian[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+        <script>
+            var accordian = document.getElementsByClassName("accordion");
+            for (var i = 0; i < accordian.length; i++) {
+                accordian[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+            function changeHeight() {
+                document.getElementByClassName('buttonContainer').style.height = '200px';
+            }
 
-</body>
+        </script>
+
+    </body>
 </html>
 
