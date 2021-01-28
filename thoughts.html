@@ -3,35 +3,36 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>shop</title>
+    <title>thoughts</title>
 
     <style>
 
     body { background-image: url("https://lh3.googleusercontent.com/hIqofxswxwZ8DN4-GWMKt8bisSVRi73cyvZdJfpjH4hC-BJFKDATOLqfHz1npw3tbSXayogE7maC6cSl9tbu5y_aMTlV-BBNa-jHcFUmvY9nESPMdxd4uMAJhIXxnvZTbblqb7eiHKnD6h9sPOymoMxvW0K6EiqqO0bW11nF_KO8BlMJhp7LKC5GrsnhEZSFUGzlJmlLwkRgW8oBU0xOhSUJ4L3LGFJq4AEUmATw3_JoKIfswd03alweIs40nOX_Ean7Dzwwj4VoCglp9DJxh1pDKPlZ-qbe_cnEKV4ICimif17W6DoOCESCiPRmL6ByjYXx9d8I3LLrRq4lFhvU_QJUqxY_jE-Tmhec4Y6-Kc1_wUcAe1dWA6cyOA9Z0JR4jteRXZyduJkXjtSHNoB6IowCombO9M7BoCckQ6N-KpRMSXzVfH9574uragWi7lo80MhKMgKFOe6abkjCgoB6uuIbLIEm1XBKkWjGU9sXp-hEekGURaIXmUcPOCsL79qkyy0r3Y287SsSMizGO4iRiVniscwHb0FozJpFEcZj18IYryKkN-k90x43G1isjPmdKKug5wZqOCk5ycKsrZhelpWu0yRwvqAUQD9RGIczCwPipHX3OawKYAUCyNW3IRPd0OXM-FHKkS-a1T6eIPX8fYf13sB0QeXBtU_cV8HjWKEp1PDkO0o-vWuYZGS-Qw=w1326-h1754-no?authuser=0");
+           background-attachment: fixed ;
            background-size: 75px 100px;
            background-repeat: repeat;
            cursor: crosshair; }
 
         .navBarTop {
             position: fixed;
-            height: 45px;
+            height: 51px;
             width: 101%;
             background-color: #202A44;
-            transform: translate(-10px, -10px);
-            z-index: -1;
+            transform: translate(-10px, -16px);
+            z-index: 0;
             cursor: crosshair;
         }
 
         .navBarBottom {
             position: fixed;
-            height: 45px;
+            height: 51px;
             width: 101%;
             background-color: #7E191B;
             transform: translate(-10px, 35px);
-            position: relative;
-            z-index: -1;
             cursor: crosshair;
         }
+
+        
 
         .title {
             position: fixed;
@@ -50,7 +51,7 @@
             height: 50px;
             width: 215px;
             background-color: #000000;
-            transform: translate(10px, -40px);
+            transform: translate(10px, 5px);
             padding: 4px;
             border-radius: 35px;
             z-index: 1;
@@ -77,31 +78,87 @@
 
         .shopButton {
             position: fixed;
-            transform: translate(250px, -29px);
+            transform: translate(250px, 15px);
         }
 
         .musicButton {
             position: fixed;
-            transform: translate(380px, -29px);
+            transform: translate(380px, 15px);
         }
 
         .mediaButton {
             position: fixed;
-            transform: translate(510px, -29px);
+            transform: translate(510px, 15px);
         }
 
         .cart {
             position: fixed;
+            top: .9%;
+            left: 94%;
             border: 5px solid #000000;
             border-radius: 50px;
             transition: all 0.2s ease-in-out;
             cursor: crosshair;
-            transform: translate(1800px, -45px);
+         
         }
 
             .cart:hover {
                 box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000;
             }
+
+        .footer {
+            position: absolute;
+            height: 150px;
+            width: 101%;
+            background-color: #000000;
+            top: 4360px;
+            left: 0%;
+            z-index: -1;
+            cursor: crosshair;
+        }
+
+        .top {
+            position: absolute;
+            height: 10px;
+            width: 101%;
+            background-color: #7E191B;
+            left: 0%;
+        }
+
+        .bottom {
+            position: absolute;
+            height: 10px;
+            width: 101%;
+            background-color: #202A44;
+            top: 10px;
+            left: 0%;
+        }
+
+        p {
+            color: #FFFFFF;
+            transform: translate(0, 45px);
+            font-family: 'Arial', Helvetica, sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            height: 4150px;
+            width: 1000px;
+            background-color: #000000;
+            top: 150px;
+            left: 27%;
+            z-index: -1;
+            cursor: crosshair;
+            border-radius: 30px;
+        }
+
+        p {
+            color: #ffffff;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-family: 'Courier New', monospace;
+        }
+
     </style>
 
 
@@ -116,7 +173,7 @@
     <div class="navBarTop"></div>
     <div class="navBarBottom"></div>
     <div class="titleBorder">
-        <div class="title" onclick="location.href ='home.html'">
+        <div class="title" onclick="location.href ='index.html'">
             <img src="https://lh3.googleusercontent.com/0XSc2g8WZHeKb8AE1K-RStQlx6_grKHs2Unx89qitnxEAiMsGXGTTfaraK8L_V0N5e7PlMXYbeOhMNQaM3ml2n5ThBAXMagKFWQAbvoWnNmhBZGYQRa1_Rn4HwPSG6wWwPAmeC61qh6VTciOZ8hDjbIdHizHSHdmnACE39mRiLInB3awyYR0wJSr_P2vqtcvcyObv2O-fi6Dt3uioTa_2xtlQo4EonHnKlFbAcH7Ty7wefgwiBrCzqvwtlpx9fnmYVzsteFBAu-8lItgDwAY4nE9LRTbQwYmpIFZmlykC4O2KgUkkiK5Q5UqQswCfl6ACjxNDfzB0uMv2OeiVF9PIEiCQvR7yNmrNYUF6uHBgsW2QIU4xY8kYvwdOBOOYcXqeq5JWjDpZ35ww7ksJ-e80yZLVAnVdZKN92pK8QyR70RZ8FJMX7Jh3m9wewOrCH97pOBEPj5cDy1gJVommrqn_TVWTvInCfZZu7v8MsRdVettZvmSspR64ZHjbn7ZgzelWZ6M6ZtQ3ET-_TLL4ixLD2SJCGqZ4asICP9SuR9hYbrnrNjeHVUmPZtE3LWAHcE_3yXWlnfG5FmuA82WBX4wSdp-CEr1Kg--rbA8-zrohng2SratmxRY2xAENf17GcZ5-F9N3tSyiB1YPN54eeVj7Disq0a76gCWBkvpPv7UJU6wlgPjVRXsV6xmHbf-ag=w764-h154-no?authuser=0"
                  width="200" height="35">
         </div>
@@ -131,11 +188,70 @@
     </div>
 
     <div class="mediaButton">
-        <input type="button" class="button" value="media" onclick="location.href ='media.html'"/>
+        <input type="button" class="button" value="media" onclick="location.href ='media.html'" />
     </div>
 
     <img class="cart" src="https://lh3.googleusercontent.com/5HWzpf6qhOMp0Xyw9tzJl2ZCwYIWwtnTGgsfU8TbO4D2PzhveCrSIYArP7OofcIb1PLwTKU1cPgmAPatrPU_L0EvkRNeyUExcQE--Td629Q_5yFvSf1-f0skJKDK3bMNelAwsT84ywENuTMkztb2rSIV0PEnMpH3gyJvqEoSKiJEbOw3bq0UASnvuv5hqrXzibyPMVlSr3azemz0-iZ7NpK8zG4QArCx6oCLnFdp_1soDxo6dzs1kYcnhxgAUeGF3iZvTL1-FKlQo3ydbHxWvT1K-V9UmKF0Rfu7e6-LV2sr2Rge21mhlYivf9mf2RIrkgIIqjNKaHqd7AIL5vSEBi5RcoDWtps2DLPD2fWO4rpN6Jnp0gYwqiEpehxiREoTP-p6_GQ--mYXb3Ol6eab2EAn17Lv8Yu2I5kfbQ-le5apkwd9LFlojWvi2jSegJ8IDqEglabgzHUZHICEUfKipVl9t6Co3BCC1VLYJbgFfhJsCWXmvyb0nmuVWLVfG1pNSAa3dhDCkH0Zjb7-prGCFoa6uO-4hgzwfSvXY6jNPLpQqCJla-2vOKldJgWb5O97KrUDnzQZ0DtcO1DovX7LrnZbq_lA1230KzcHuwFs8YCwnmlIzZTJHOSt0jovDFaMZBCz23dyIbHYO-zFN2ePJ2zNbcdLSwwwoe23igXMsYDLvS159LdQ6mycbrwkGg=s1000-no?authuser=0"
          width="60" height="60" />
+
+    <div class="footer">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <center><p style="font-family:Arial, Helvetica, sans-serif;">jacobcampbell.ca ©</p></center>
+    </div>
+
+    <div class="container">
+        <p style="text-transform: uppercase; font-size: 25px; margin-top: -15px; font-weight: bold;">*disclaimer* the following is a collection of thoughts expressed exclusively during my freshman year of college. i am not certain what is said within these passages. you have been warned.</p>
+        <p>Im not feeling very special today. I thought I was unique, but doing the strength finders this morning I figured out I had like all of the top traits on the team. I didn’t have a single one that was unique to me, although I felt like I connected to just about every one that came across the screen. And then on top of that I started to get emotional in front of the whole team. I can be doing that shit, they’ll think im soft. Now Im sitting here in my room, alone, writing about this shit because nobody wants to hangout with me. Have I been a piece of shit lately. The first thing austin said to me when I cam out of my room was “you were singing a little to loud earlier today.” Fuck sorry dude. Also Lia wont even talk to me. I know I just met her and shes my RA and all but I thought there was something there. And when I say something there im not even talking romantics. She just seemed like someone I could have talked to about anything, but im not so sure anymore.</p>
+        <p>I wish I was better at drawing and expressing myself in picture form. Some of the shit I saw the other night was insane and if I could just put it down on paper in some way other than words that would be kinda cool. Although I have a tough time even doing that. My problem is that I blank every time I go to start drawing.</p>
+        <p>
+            What am I doing wrong? Everyone on the team seems to be getting along so well and im just here like the ugly little duckling. Now obviously things could continue like they were last week forever, but I figured that maybe they would keep going in that direction for at least a little bit longer. Now I just feel like a piece of shit. Ive been lifting and running for the last couple days and I feel good about that, but I kind of wish I would get some recognition for at least some of the things that I do. For example, when I picked up all the trash that the fellas left lying around on the table outside Simon, nobody gave me a single word of appreciation. I probably even got roasted for throwing out someones lemonade, when al I was trying to do was the right thing.
+            I fucking wish we could get baked around here and not have to worry about this stupid drug test bullshit. That would be so beneficial for everyone. Nobody would be out getting fucked up like they do now, sorry that’s wrong, I’m sure people would, but I know personally I wouldn’t feel the desire to drink just as I haven’t for the past like six months or something. I don’t even think ive met a single girl that has been into me the whole time I’ve been down here. What am I doing wrong? I honestly don’t think im doing any thing wrong and hopefully if I keep doing what im doing things will start to go my way again. But how long will I have to wait? Ive had one good weekend so far and I guess that’s like 50%. Hey theres someone at the door right now. Maybe im just not putting in enough effort. But that’s just about all I give in everything I do is effort. I don’t even have much talent, so effort is one thing that I definitely pride myself in. I guess what im trying to say is that I wish some people would treat me the same way that I try to treat them. When I was on acid the other night, I had no doubt in my mind that I was put on this world to do something very special and that I was completely separate from the pack but how im feeling right now, im not so sure.
+        </p>
+        <p>I wish there was something I was good at, I mean I sing a little bit btu im still just average at that. And when I try to improve, people get embarassed for me, which is obviously not a good sign. Like last night at LJ’s when I started ti sing after kereokee, I Could tell that keegan and nick were both embarassed to be in there with me, that’s why keegan rushed over to turn the volume down instantly. </p>
+        <p>
+            I love this song so much, but I feel that when I listen to it im thinking too much of the past since ive listened to it so many damn times. When I put it on do people say “not this fucking song again…” or do they not even know which song it is. Either one is just as bad as the other.
+            Or how about yesterday when that small, wide black girl said that she literally knew everyone names but mine. That didn’t make me feel very good. That’s just about all I want, Reputation. I wasn’t people to know who I am and what I do and where I come from. After that, everything else will follow.
+        </p>
+        <p>I wish I had more things to say. Not even just right now, but all the time. I wish I could see molly again. I wish I had the guts to snapchat Katie, but I don’t. Why not? She wants you too. But on the other handm what if she doesn’t. </p>
+        <p>I don’t really know where I fit in but that seems to be the normal for just about every aspect of my life. Every one I meet and everyone I talk to seems to have something that defines them and makes them who they are and I just don’t really have that. I mean obviously I play lacrosse and I sing a little bit but I don’t really DO anything. Maybe I just havent found it yet or maybe I wont ever find it. I kind of just wish I had something that makes me special. Ive just finished like 3 hours of homework and now I kind of wish I had more to do. As soon as I left my room I felt lost and didn’t really feel like I belonged. I want somewhere to be and something to do. Im sitting here writing down what im thinking alone in my room, like who does that? And even while Im doing this, talking to myself, im having hesitations and I don’t know what to say. I read a quote one time on twitter, I think it was on a page call @blackedoutpoetry and It said “we all supress our thoughts whether we choose to admit it or not” and that realy spoke to me. I feel like I have so much to say if people would listen and I didn’t doubt myself. I see people look at me as I walk past and I don’t know how to take advantage of that. Maybe that will come with age and maturity. I mean I am only 17 but I don’t like to use that as an excuese for anything I do in my life because it is not a viable excuse for anything. Ive gotten to where I am today wih my age challenging me every step of the way and look at where I am. I love the environment that Maryville has provided so far.  Every thing seems to be geared towards knowledge and I feel smarter already and I’ve only been here for a week. </p>
+        <p>I just finished talking to my parents and I love them so much but its crazy, I havent been missing them as much as I for sure thought I was going to. Maybe that will come but ive been doing so good on my own and have been handling myself so well, plus the fact that my schedule has ben so busy that I haven’t really had a chance to miss them. </p>
+        <p>I wish I has someone to talk to other than this damn screen and myself. I know Mat is one of my good friends and when we first got here we were having some great conversations, but he just changed over night and now I seem to be having problems talking to him at all. Maybe he’ll come back from nationals after seeing Gina and remember who he really is and realize that he doesn’t need to act like anyone else to fit in. I just don’t think he’s used to having not just this much freedom to do what he wants, but I don’t think he’s used to having any freedom at all which is kind of scary. I think I may need to keep my eye on him but at the same time he is his own person and he needs to learn how to handle himself, but I don’t know how much longer I can go on listening to him say ‘bro’ and ‘like honestly. Its just a little over the top. </p>
+        <p>I think I set everyone expectations for myself really high when I first got to campus. Im not going to say I set them too high because I expect even more out of myself, but I just don’t know how long I can keep going and I can already see that I cant keep that pace going forever. University is going to be a marathon and I started off sprinting full speed ahead. But I am happy with that pace that I have going this week and I think if I can keep this up and even increase it as time goes on, I will be nothing but successful. </p>
+        <p>I want to write a song. I don’t know what it would be about, or what type of music it would be, who would accompany me with instruments and who would produce it or even if I would be capable of producing it myself. I just know that I like music a lot and that I want to write a song. I think the first step in that direction would be to learn how to play the piano, which is something that ive been meaning to do for a while but I havent found the time. That’s a cop out. I havent made the time or had the self motivation to learn how to play the piano but im going to make the time. </p>
+        <p>
+            Theres so many people outside my room right now and I feel absolutely no desire to go out there and talk to anyone. I have a feeling that anyone I am meant to talk to will seek me out and make an effort to come talk to me. That goes the same way from my end though, if I feel like someone is worth talking to then I will make a point of going out of my way to talk them and let them know that they are special. I hate being part of a group. I want to be special in everything that I do, no matter what it is. I just have this feelign that I want and need to be different. I don’t know where it comes from or what drives me to feel the need to be different, but it comes from somewhere deep down and I cant suppress it. Maybe that’s why I don’t fit in anywhere or with anyone, because I want and need to be different and therefore I cant relate to anyone and no one can relate to me. Maybe I’ll find some one that feels the same way I do.
+            Was he talking about me? He said, “there was this dude back at my highschool and they are the exact same person.” I really hope he 	wasn’t talking about me, especially as im just writing down all my thoughts about I have this urge and desire to be different. I mean, I guess nobody would ever find out because no one is every going to see any of this, but that would be a huge hit to my ego, if I have one in the first place.
+        </p>
+        <p>What is an ego? I don’t think Ive ever heard anyone use that word in a positive context. Can it be used positively? I don’t even think so? I sincerely hope that I don’t have an ego and that nobody that I meet thinks that I do in fact have an ego. What is an ego? </p>
+        <p>Why do I only write down my thoughts when im down? What if I were to write down what im thinking when im feeling good about things as well? Maybe il try that next time, or will I even think to do that? Maybe that’s what makes someone a good writer. They know when they are on top and they make a point to write down what theyre thinking, rather than waiting for the lows. </p>
+        <p>Im so damn Hungry</p>.
+        <p>Wow. Im speechless. Shes so damn cool. But I cant see this going anywhere. Shes my RA and I have to respect that. Although I do hope that we come to be great friends throughout the next year. Great friends. Tonight was great. </p>
+        <p>Goodnight. </p>
+        <p>I have no idea where to even begin right now. All of the keys are pulsating and moving right in front of my face and I don’t know how to even begin to put these thoughts that I’m having into words. There are so many countless, endless possibilities sitting right here at my finger tips on this tiny piece of technology. </p>
+        <p>Everyone is going in all different directions and nobody has any place to be. Why are you all in such a rush to get anywhere? It’s the weekend. Sit back, relax and take it all in because there is nothing to do except enjoy yourself. You’ve worked so damn hard this week that you deserve a little time to take in all of the little things that life has to offer. People have told me, “college is going to be the greatest time of your life, enjoy it.” Well im living it right now. </p>
+        <p>Where are you going in your old, beat up, muffler hanging, oldmobile? You don’t have anywhere to be so quit pretending like you do. </p>
+        <p>Where are you going little guy? </p>
+        <p>
+            Ive met so many great people since ive been here and they all seem to know my name, and I think im doing a pretty good job at keeping everyone important in line in my memory.
+            People suck. I don’t really have any other way to put it. People suck. That dude was helpless, down to his last shred of anything that he had left and there was nobody there to help him. I wish there was ore that I could have done to help him reach his final destination, but I had exhausted every option that I possibly had, which isnt much, and all of his so called friends left him out to dry. People don’t really realize until something bad happens.
+        </p>
+        <p> I have no idea what is going any more or even what to do. I just woke up from an 18 hour nap after tripping on 3 tabs of acid and I am still emotionally exhausted. So many crazy thoughts ran through my head over that 36 hour period and now the world is all back to normal. I have reading to do for psychology and writing this week but that’s the last thing on my mind. Why do I seem to be so different from everybody that I meet? I kind of just want to find someone that I sincerely connect with. Owen is a really great guy with a lot of really great ideas and talents but him and I are so different in every single aspect of life. I tried to keep up with him and do what he does and I absolutely couldn’t. How does he do that? We didn’t even get to drinking! </p>
+        <p>
+            I think Nick and I definitely connected but I don’t think it will stay that way. I have a feeling that was a one time thing for now and that it is going to be a while until we do that again. Don’t get me wrong, he is a great guy, btu I don’t think he wants people to know that he is a great guy.
+            Why cant I just be normal and like getting extra fucked up like everyone else? Then maybe I would fit in. But I don’t like it. Every once in a while it is a lot of fun, but id rather good company from good people who like good conversation. I have no idea what is going on.
+        </p>
+        <p>Im sitting alone in the cafeteria at an eight person table and im not sure why. Am I a loser? Do I intimidate people? Do people not understand me? Maybe its all of those things. Like, what kind of person would rather stand there and write down there thoughts at 1:30 n a Saturday night rather than go and party. Apparently I would, and im still not even very good at that. I barely wrote anything because I was tripping too damn hard and could get all of the thoughts that were rushing through my head down onto paper. </p>
+        <p>I think when coach ran us the other day, it was to push us past our absolute breaking point and further, just to see how far we would go for him and this program. He was made a point of absolutely breaking us down mentally and physically over that three hour period and I think he just used the fellas shooting at MoBap as an excuse to do that. He could have made up that story about the coach phoning him to say that they were being disrespectful for all that we know. Maybe he just caught wind of us shooting there the other day and fabricated the whole story in order for doing that to us. Don’t get me wrong, im absolutely not griping or complaining. I think that whole 3 hours was absolutely necessary in order to bond us as a program and make sure we are absolutely devoted to Saints lacrosse, and I think he should be happy with the outcome from that, because I know I personally have never worked that hard or pushed myself that far past my breaking point for anyone or anything ever before. Im sure the same thing can be said for just about everyone on the team as well. Thinking back on it now, the feeling I got from pushing myself that hard was kind of euphoric. It was a kind of high that I have never experienced before and it was insane. When we were doing all of those core exercises at the end, I remember having crazy closed eye visuals and when I made that comment, “How much is that in centimeters coach?” it just came out subconsciously. I honestly thought I was going to be torched for making a dumb comment like that, and when he said, “and because of your funny comment Mr. Campbell… we are done,” I don’t think ive ever been so relieved in my entire life. Maybe Coach Long showing us leading the yoga at the end was a little bit of a reward for working so damn hard. </p>
+        <p>All I want in every single aspect of my entire life is to be successful. I used to want to be the best at everything that I did, and now that I think about it, that is absolutely impossible. There is always going to be someone that is bigger, stronger, faster, smarter than me no matter what I do. All I can do is the best I possibly can, no matter what it may be and that will be my definition of success. Obviously I will still strive to be the best in anything I do because if I don’t then how will I ever excel, but when I am not,  I just have to accept and realize I will always be able to improve in order to be the best. </p>
+        <p>
+            Some of the things that were said while we were all tripping balls were so incredibly wise beyond our years. There was so much knowledge in that small group of people and we all realized that you can always continue to gain knowledge no matter how smart you already are. I think, if anything, that will be the one thing I take away from my experiences the other night.
+            I wish I could put absolutely every thought that runs through my head or that will run through my head because I feel that I have some good things to say, but I never have any idea how to express myself. Im not creative, im cant draw, Im not a very good writer, I like to sing a little bit but im not even sure how good I am at that, I play lacrosse but that’s not really a way to express myself. I just wish I had a good platform to let other people know what was running through my head, then maybe a few more people would understand me.
+        </p>
+        <p>I want some more milk. </p>
+        <p>Peace out. </p>
+    </div>
+
 
 
 
