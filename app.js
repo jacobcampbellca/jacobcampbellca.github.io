@@ -98,7 +98,7 @@ function animateSpace() {
 
 function animateMan() {
     requestAnimationFrame(animateMan);
-    man.rotation.y += 0.01;
+    man.rotation.y += 0.001;
     renderer.render(scene, camera);
 }
 
