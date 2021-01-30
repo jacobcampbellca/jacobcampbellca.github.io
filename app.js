@@ -1,11 +1,8 @@
+var functionCalls = 0;
+
 //Variables for setup
 function object() {
   var container = document.querySelector(".scene");
-
-  var fov = 90;
-  var aspect = container.clientWidth / container.clientHeight;
-  var near = 0.1;
-  var far = 1000;
 
   //Load object
   let objectLoader = new THREE.GLTFLoader();
@@ -15,19 +12,14 @@ function object() {
     man.position.x = 10;
     man.position.y = 10;
     man.rotation.x = 90;
-    man.rotation.y = 3;
+    man.rotation.y = 2.7;
     animateMan();
   });
-
+  
 }
 
 function moon() {
     var container = document.querySelector(".scene");
-  
-    var fov = 90;
-    var aspect = container.clientWidth / container.clientHeight;
-    var near = 0.1;
-    var far = 1000;
   
     //Load object
     let moonLoader = new THREE.GLTFLoader();
@@ -45,6 +37,7 @@ function moon() {
 
 
 function main() {
+
   var container = document.querySelector(".scene");
 
   //Renderer
@@ -81,14 +74,10 @@ function main() {
     space = gltf.scene.children[0];
     animateSpace();
   });
+  
   object();
   moon();
 }
-
-
-
-
-
 
 function animateSpace() {
   requestAnimationFrame(animateSpace);
@@ -96,16 +85,19 @@ function animateSpace() {
   renderer.render(scene, camera);
 }
 
+var x = 0;
 function animateMan() {
     requestAnimationFrame(animateMan);
-    man.rotation.y += 0.001;
     renderer.render(scene, camera);
+    man.rotation.y += Math.sin(x) / 220;
+    x += 0.01;
+    
 }
 
 function animateMoon() {
     requestAnimationFrame(animateMoon);
     moon.rotation.x += 0.0001;
-    moon.rotation.z += 0.001;
+    moon.rotation.z += 0.0005;
 }
 
 function onWindowResize() {
@@ -115,5 +107,4 @@ function onWindowResize() {
 }
 
 main();
-
 window.addEventListener("resize", onWindowResize);
