@@ -1,39 +1,6 @@
 var functionCalls = 0;
 
-//Variables for setup
-function object() {
-  var container = document.querySelector(".scene");
 
-  //Load object
-  let objectLoader = new THREE.GLTFLoader();
-  objectLoader.load("object/scene.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    man = gltf.scene.children[0];
-    man.position.x = 10;
-    man.position.y = 10;
-    man.rotation.x = 90;
-    man.rotation.y = 2.7;
-    animateMan();
-  });
-  
-}
-
-function moon() {
-    var container = document.querySelector(".scene");
-  
-    //Load object
-    let moonLoader = new THREE.GLTFLoader();
-    moonLoader.load("moon/scene.gltf", function(gltf) {
-      scene.add(gltf.scene);
-      moon = gltf.scene.children[0];
-      moon.position.z = -50;
-      moon.position.x = -80;
-      moon.position.y = -80;
-      moon.rotation.y = 3;
-      animateMoon();
-    });
-  
-}
 
 
 function main() {
@@ -77,6 +44,42 @@ function main() {
   
   object();
   moon();
+}
+
+//Variables for setup
+function object() {
+  var container = document.querySelector(".scene");
+
+  //Load object
+  let objectLoader = new THREE.GLTFLoader();
+  objectLoader.load("object/scene.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    man = gltf.scene.children[0];
+    man.position.x = 13;
+    man.position.y = 10;
+    man.position.z = 5;
+    man.rotation.x = 90;
+    man.rotation.y = 2.7;
+    animateMan();
+  });
+  
+}
+
+function moon() {
+    var container = document.querySelector(".scene");
+  
+    //Load object
+    let moonLoader = new THREE.GLTFLoader();
+    moonLoader.load("moon/scene.gltf", function(gltf) {
+      scene.add(gltf.scene);
+      moon = gltf.scene.children[0];
+      moon.position.z = -50;
+      moon.position.x = -80;
+      moon.position.y = -80;
+      moon.rotation.y = 3;
+      animateMoon();
+    });
+  
 }
 
 function animateSpace() {
